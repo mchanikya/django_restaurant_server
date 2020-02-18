@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>menu items</title>
+</head>
+<body>
+	<H2 style='color:red'> Menu items</H2>
+	<!-- {{menu_items}} -->
+	{% for item in menu_items %}
+		<ul><p>{{item.id}} <b>{{item.name}}</b>  {{item.description}} <br></p></ul>
+	{%endfor%}
+</body>
+</html>
